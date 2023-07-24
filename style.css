@@ -8,8 +8,8 @@ table{
     height: 400px;
 }
 td{
-    width: fit-content;
-    height: fit-content;
+    width: 25%;
+    height: 20%;
 }
 button{
     height: 100%;
@@ -18,8 +18,12 @@ button{
 }
 input{
     width: 298px;
-    height: 98%;
+    height: 40px;
     border-radius: 10px;
+    font-size: x-large;
+}
+tr ,input{
+    height: 52px;
 }
 h1{
     background-color:rgba(4, 5, 5, 0.329);
@@ -31,4 +35,8 @@ h1{
 }
 div{
     border-collapse: collapse;
+}
+#main{
+    width: fit-content;
+    background-color: chartreuse;
 }

@@ -3,6 +3,7 @@
 <head>
     <link rel="icon" href="icon.jpeg" type="image/x-icon"/>
     <link rel="stylesheet" href="style.css">
+   <script src="script.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project: Calculator</title>
@@ -11,41 +12,42 @@
     <div>
         <h1> Project: Calculator</h1>
     </div>
-    <div>
+    <div id="main">
         <table>
             <tr>
-                <td colspan="4">
-                    <input type="text" id="result" onchange="display(0);" readonly>
+                <td colspan="4">                    
+                    <input type="text" id="me" readonly value="0">                      
                 </td>
             </tr>
             <tr>
-                <td><button id="save">M <sup>+</sup></button></td>
-                <td> <button id="clear">clear</button></td>
-                <td><button id="Del">Del</button></td>
-                <td><button id="divide">&divide;</button></td>
+                <td><button id="save" onclick="addmemory();">M<sup>+</sup></button></td>
+                <td><button id="save" onclick="getmemory();">M</button></td>
+                <td> <button id="clear" onclick="cleardata();">clear</button></td>
+                <td><button id="Del" onclick="del();">Del</button></td>
             </tr>
             <tr>
-                <td><button id="seven">7</button></td>
-                <td> <button id="eight">8</button></td>
-                <td><button id="nine">9</button></td>
-                <td><button id="multiply">&times;</button></td>
+                <td><button id="seven" onclick="clickseven()">7</button></td>
+                <td> <button id="eight" onclick="clickeight()">8</button></td>
+                <td><button id="nine" onclick="clicknine()">9</button></td>
+                <td><button id="multiply" onclick="clickmultiply()">&times;</button></td>
             </tr>
             <tr>
-                <td><button id="four">4</button></td>
-                <td> <button id="five">5</button></td>
-                <td><button id="six">6</button></td>
-                <td><button id="minus">&minus;</button></td>
+                <td><button id="four" onclick="clickfour()"> 4</button></td>
+                <td> <button id="five" onclick="clickfive()">5</button></td>
+                <td><button id="six" onclick="clicksix()">6</button></td>
+                <td><button id="divide" onclick="clickdivide();">&divide;</button></td>
             </tr>
             <tr>
-                <td><button id="one">1</button></td>
-                <td> <button id="two">2</button></td>
-                <td><button id="three">3</button></td>
-                <td><button id="plus">&plus;</button></td>
+                <td><button id="one" onclick="clickone()">1</button></td>
+                <td> <button id="two"onclick="clicktwo()">2</button></td>
+                <td><button id="three" onclick="clickthree()">3</button></td>
+                <td><button id="plus" onclick="clickadd();">&plus;</button></td>
             </tr>
             <tr>
-                <td colspan="2"><button>0</button></td>
-                <td><button>&period;</button></td>
-                <td><button>&equals;</button></td>
+                <td onclick="clickzero()"><button>0</button></td>
+                <td><button onclick="clickdot()">&period;</button></td>
+                <td><button onclick="clickequal();">&equals;</button></td>
+                <td><button id="minus" onclick="clicksubstract();">&minus;</button></td>
             </tr>
 
         </table>
